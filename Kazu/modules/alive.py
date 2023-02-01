@@ -62,12 +62,12 @@ async def alive(client: Client, message: Message):
             send(
                 message.chat.id,
                 alive_logo,
-                caption=zu,
+                caption=man,
                 reply_to_message_id=ReplyCheck(message),
             ),
         )
     except BaseException:
-        await xx.edit(zu, disable_web_page_preview=True)
+        await xx.edit(man, disable_web_page_preview=True)
 
 
 @Client.on_message(filters.command("setalivelogo", cmd) & filters.me)
