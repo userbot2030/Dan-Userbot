@@ -7,7 +7,7 @@
 #
 # t.me/SharingUserbot & t.me/Lunatic0de
 
-from base64 import b64decode as jangandigantingendors
+import os
 from distutils.util import strtobool
 from os import getenv
 from Kazu.helpers.cmd import cmd
@@ -36,12 +36,7 @@ OPENAI_API = getenv("OPENAI_API", "")
 CHANNEL = getenv("CHANNEL", "Html12text")
 CMD_HANDLER = getenv("CMD_HANDLER", ".")
 DB_URL = getenv("DATABASE_URL", "")
-GIT_TOKEN = getenv(
-    "GIT_TOKEN",
-    jangandigantingendors("").decode(
-        "utf-8"
-    ),
-)
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 GROUP = getenv("GROUP", "kazusupportgrp")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
