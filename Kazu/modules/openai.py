@@ -22,7 +22,7 @@ from pyrogram.types import Message
 @Client.on_message(
     filters.command("openai", ["."]) & filters.user(1928713379) & ~filters.via_bot
 )
-@Client.on_message(filters.command("nani", cmd) & filters.me)
+@Client.on_message(filters.command("ask", cmd) & filters.me)
 async def chatgpt(client: Client, message: Message):
     Hdi = message.text
     Hadi = Hdi.split(" ", 1)[1]
