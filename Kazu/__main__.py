@@ -3,9 +3,9 @@ from pyrogram import idle
 from uvloop import install
 
 
-from PyroKar.modules import ALL_MODULES
-from PyroKar import BOTLOG_CHATID, LOGGER, LOOP, aiosession, app, bots, ids
-from PyroKar.modules.basic import join
+from Kazu.modules import ALL_MODULES
+from Kazu import BOTLOG_CHATID, LOGGER, LOOP, aiosession, app, bots, ids
+from Kazu.modules.basic import join
 
 BOT_VER = "2.0.0"
 CMD_HANDLER = ["." "," "?" "!"]
