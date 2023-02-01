@@ -85,7 +85,7 @@ async def ping_function(message: Message, answers):
     duration = (end - start).microseconds / 1000
     msg = (
         f"<b>✨𝙿𝚈𝚁𝙾𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃✨</b>\n\n"
-        f"<b>✨ᴋᴀᴢᴜ!!<b>\n"
+        f"<b>🤖ᴅᴜᴀʀʀʀ<b>\n"
         f"├•ᴜᴘᴛɪᴍᴇ :</b> <code>{uptime}</code>\n"
         f"├•ᴅᴜʀᴀᴛɪᴏɴ :</b> <code>{duration}ms</code>\n"
     )
@@ -115,7 +115,7 @@ async def karman_function(message: Message, answers):
     )
     answers.append(
         InlineQueryResultArticle(
-            title="zu",
+            title="man",
             description="Check Bot's Stats",
             thumb_url="https://telegra.ph/file/9b992f562b086e221acdd.jpg",
             input_message_content=InputTextMessageContent(
@@ -163,7 +163,7 @@ async def inline_query_handler(client: Client, query):
         elif string_given.startswith("ping"):
             answers = await ping_function(query, answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=5)
-        elif string_given.startswith("zu"):
+        elif string_given.startswith("man"):
             answers = await karman_function(query, answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=0)
     except Exception as e:
