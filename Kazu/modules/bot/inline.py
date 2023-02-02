@@ -89,7 +89,17 @@ async def ping_function(message: Message, answers):
         f"├•ᴜᴘᴛɪᴍᴇ :</b> <code>{uptime}</code>\n"
         f"├•ᴅᴜʀᴀᴛɪᴏɴ :</b> <code>{duration}ms</code>\n"
     )
-    
+    answers.append(
+        InlineQueryResultArticle(
+            title="ping",
+            description="Check Bot's Stats",
+            thumb_url="https://telegra.ph/file/9b992f562b086e221acdd.jpg",
+            input_message_content=InputTextMessageContent(
+                msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
+            ),
+        )
+    )
+    return answers
 
 async def karman_function(message: Message, answers):
     msg = (
