@@ -1,49 +1,79 @@
-# PyroZu-Userbot Telegram
+<img src="https://telegra.ph//file/64202f501f38a39b1a8ca.jpg">
 
-PyroZu-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.
+<p align="center"> 🔥 PyroZu-Userbot 🔥 </p>
 
-Saya membuat repository ini untuk bersenang-senang sekaligus membantu anda mengelola grup secara efisien dan untuk membantu mengurangi kebosanan saat menggunakan telegram.
 
-## ⚠️ Disclaimer
+<p align="center">
+    <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
 
+## Requirements 
+
+- PyroGram Session
+- Host (VPS atau HEROKU)
+- Python 3.8+ or 3.7
+- [SQL](https://elephant.com)
+- OTAK
+
+
+## Features 
+
+- **GADA YG SPESIAL!**
+- **CUMA USERBOT BIASA DENGAN RASA PREMIUM**
+
+
+
+## VPS/Locally deploy!
+```console
+ $ sudo apt-get update -y
+ $ sudo apt-get upgrade
+ $ git clone https://github.com/ionmusic/PyroZu-Userbot
+ $ cd PyroZu-Userbot
+ $ python3 -m venv venv
+ $ source venv/bin/act*
+ $ pip3 install -U-r req*
+ $ cp sample.env .env
 ```
-Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
-Gunakan bot ini dengan risiko Anda sendiri.
-Gunakan userbot ini dengan bijak.
-Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya.
+
+<h3 align="center">
+   Edit <b>.env</b> ISI VARS YANG DIMINTA
+</h3>
+
+```console
+ $ screen -S Kazu
+ $ python3 -m Kazu
 ```
 
-<h3 align="center">Klik Tombol di Bawah ini untuk Deploy di Heroku</h3>
+## Heroku Deploy!
+<h3 align="center">Click The Button</h3>
 <a href="https://heroku.com/deploy?template=https://github.com/ionmusic/PyroZu-Userbot"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
 
-## 🖇 Generating Pyrogram String Session
-    
-> Anda memerlukan APP ID & API HASH Telegram untuk mengambil sesi Pyrogram. ambil APP ID dan API Hash di my.telegram.org
-- Generate Session via <a href="https://repl.it/@mrismanaziz/stringen?lite=1&outputonly=1">Repl</a>
-- Generate Session via <a href="https://t.me/kazu_stringbot">Telegram String Generation Bot</a>
+## Disclaimer 
 
-## Okteto Deploy [Recomended if heroku not free]
-  <a href="https://okteto.com">Click Here</a>
 
-## 🏷 Support
+```console
+      ⚠️ WARNING FOR YOU ⚠️
+       AKUN TELEGRAM ANDA BISA AJA KE DEAK.
+   NGGA AKAN ADA PERTANGGUNGJAWABAN DARI KAMI
+BOT INI CUMA SEKEDAR HOBBY KAMI DAN KEGABUTAN KAMI,
+      
+      DAN SEMUA INI GRATIS !!!!!
+```
 
-- Follow Channel [Kazu Session](https://t.me/Html12text) untuk info Update bot 
-- Gabung Group [Kazu Support](https://t.me/kazusupportgrp) untuk diskusi, pelaporan bug, dan bantuan tentang PyroZu-Userbot.
+## Thanks to 💖
+- [Zaid](https://github.com/ITZ-ZAID)
+- [OnlyMeriz](https://github.com/Onlymeriz)
+- [Kazu](https://github.com/ionmusic)
 
-## 👨🏻‍💻 Credits
--  [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
--  [Risman](https://github.com/mrismanaziz) for [PyroMan-Userbot](https://github.com/mrismanaziz/PyroMan-Userbot)
--  [Kazu](https://github.com/ionmusic) for [PyroKar-Userbot](https://github.com/ionmusic/PyroZu-Userbot)
+## Credit 💖
+- Zaid Userbot
+- PyroMAN
+- Ayra X Userbot
+- Kazu
 
-#### Special Thanks To [Everyone](https://github.com/mrismanaziz/PyroMan-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
--  [TeamDerUntergang](https://github.com/TeamDerUntergang/Telegram-SedenUserBot) : SedenUserBot
--  [TheHamkerCat](https://github.com/TheHamkerCat/WilliamButcherBot) : WilliamButcherBot
--  [TeamYukki](https://github.com/TeamYukki/YukkiMusicBot) : YukkiMusicBot
--  [ITZ-ZAID](https://github.com/ITZ-ZAID) : Zaid-UserBot
--  [Tofikdn](https://github.com/tofikdn) : Tede
--  [Toni](https://github.com/Toni880) : Prime-UserBot
--  [Hadi](https://github.com/hdiiofficial) : hdiiofficial
+## Support / Channel
 
-## 📑 License
-Licensed under [GNU General Public License v3.0](https://github.com/mrismanaziz/PyroMan-Userbot/blob/Man-Userbot/LICENSE) All designs were created by [@mrismanaziz](https://github.com/mrismanaziz)
+<p align="center">𝐒𝐮𝐩𝐩𝐨𝐫𝐭 / 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ----> </p>
+
+<p align="center"><a href="https://t.me/Html12text"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-Channel-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
+<p align="center"><a href="https://t.me/kazusupportgrp"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-𝐒𝐮𝐩𝐩𝐨𝐫𝐭-black?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
