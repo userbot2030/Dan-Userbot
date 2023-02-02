@@ -89,21 +89,7 @@ async def ping_function(message: Message, answers):
         f"├•ᴜᴘᴛɪᴍᴇ :</b> <code>{uptime}</code>\n"
         f"├•ᴅᴜʀᴀᴛɪᴏɴ :</b> <code>{duration}ms</code>\n"
     )
-    answers.append(
-        InlineQueryResultArticle(
-            title="ping",
-            description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/9b992f562b086e221acdd.jpg",
-            input_message_content=InputTextMessageContent(
-                msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
-            ),
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Support", url="t.me/kazusupportgrp")]]
-            ),
-        )
-    )
-    return answers
-
+    
 
 async def karman_function(message: Message, answers):
     msg = (
@@ -160,9 +146,6 @@ async def inline_query_handler(client: Client, query):
         elif string_given.startswith("helper"):
             answers = await help_function(answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=0)
-        elif string_given.startswith("ping"):
-            answers = await ping_function(query, answers)
-            await client.answer_inline_query(query.id, results=answers, cache_time=5)
         elif string_given.startswith("man"):
             answers = await karman_function(query, answers)
             await client.answer_inline_query(query.id, results=answers, cache_time=0)
