@@ -85,9 +85,8 @@ async def ping_function(message: Message, answers):
     duration = (end - start).microseconds / 1000
     msg = (
         f"<b>❃ 𝙿𝚈𝚁𝙾𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ❃</b>\n\n"
-        f"❃ **Pɪɴɢ !!** "
-        f"`%sms` \n"
-        f"❃ **Uᴘᴛɪᴍᴇ -** "
+        f"❃ Pɪɴɢ : `{ping}` ms\n"
+        f"❃ Uᴘᴛɪᴍᴇ - "
         f"`{uptime}` \n"
         f"**✦҈͜͡➳ Bʀᴀɴᴄʜ: {branch} \n\n"
     )
