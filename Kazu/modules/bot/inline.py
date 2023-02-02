@@ -84,10 +84,11 @@ async def ping_function(message: Message, answers):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     msg = (
-        f"<b>✨𝙿𝚈𝚁𝙾𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃✨</b>\n\n"
-        f"<b>🤖ᴅᴜᴀʀʀʀ<b>\n"
-        f"├•ᴜᴘᴛɪᴍᴇ :</b> <code>{uptime}</code>\n"
-        f"├•ᴅᴜʀᴀᴛɪᴏɴ :</b> <code>{duration}ms</code>\n"
+        f"❃ **Pɪɴɢ !!** "
+        f"`%sms` \n"
+        f"❃ **Uᴘᴛɪᴍᴇ -** "
+        f"`{uptime}` \n"
+        f"**✦҈͜͡➳ Mᴀsᴛᴇʀ :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
     answers.append(
         InlineQueryResultArticle(
