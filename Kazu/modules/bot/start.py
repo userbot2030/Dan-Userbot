@@ -1,3 +1,7 @@
+#Credit Bye Geez|Ram
+#Thanks To All Dev
+
+
 from Kazu import app
 from pyrogram import filters
 
