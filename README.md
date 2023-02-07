@@ -71,6 +71,7 @@ BOT INI CUMA SEKEDAR HOBBY KAMI DAN KEGABUTAN KAMI,
 - PyroMAN
 - Ayra X Userbot
 - Kazu
+- Geez|Ram
 
 ## Support / Channel
 
