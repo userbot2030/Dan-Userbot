@@ -7,21 +7,6 @@
 <p align="center">
     <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
 
-## Requirements 
-
-- PyroGram Session
-- Host (VPS atau HEROKU)
-- Python 3.8+ or 3.7
-- [SQL](https://elephant.com)
-- OTAK
-
-
-## Features 
-
-- **GADA YG SPESIAL!**
-- **CUMA USERBOT BIASA DENGAN RASA PREMIUM**
-
-
 
 ## VPS/Locally deploy!
 ```console
@@ -49,24 +34,13 @@
 <a href="https://heroku.com/deploy?template=https://github.com/ionmusic/PyroZu-Userbot"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
 
-## Disclaimer 
 
-
-```console
-      ⚠️ WARNING FOR YOU ⚠️
-       AKUN TELEGRAM ANDA BISA AJA KE DEAK.
-   NGGA AKAN ADA PERTANGGUNGJAWABAN DARI KAMI
-BOT INI CUMA SEKEDAR HOBBY KAMI DAN KEGABUTAN KAMI,
-      
-      DAN SEMUA INI GRATIS !!!!!
-```
-
-## Thanks to 💖
+## Thanks to 
 - [Zaid](https://github.com/ITZ-ZAID)
 - [OnlyMeriz](https://github.com/Onlymeriz)
 - [Kazu](https://github.com/ionmusic)
 
-## Credit 💖
+## Credit 
 - Zaid Userbot
 - PyroMAN
 - Ayra X Userbot
