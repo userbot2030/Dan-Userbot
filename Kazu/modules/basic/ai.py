@@ -38,3 +38,13 @@ async def openai(client: Client, message: Message):
         pass
     except Exception:
         await msg.edit("Terjadi Kesalahan!!\nAnda Belum Memasukan OPENAI_API_KEY")
+
+add_command_help(
+    "openai",
+    [
+        [
+            "nani",
+            "Bertanya Sesuatu Kepada Google",
+        ],
+    ],
+)
