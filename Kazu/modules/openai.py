@@ -42,9 +42,6 @@ async def openai(client: Client, message: Message):
 add_command_help(
     "openai",
     [
-        [
-            "nani",
-            "Bertanya Sesuatu Kepada Google",
-        ],
+        ["nani", "Bertanya Sesuatu Kepada Google"],
     ],
 )
