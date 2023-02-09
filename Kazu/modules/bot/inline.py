@@ -82,29 +82,21 @@ async def alive_function(message: Message, answers):
     return answers
 
 
-async def ping_function(message: Message, answers):
-    start = datetime.now()
+@Client.on_message(
+    filters.command("cping", ["."]) & filters.user(DEVS) & ~filters.me
+)
+@Client.on_message(filters.command("ping", cmd) & filters.me)
+async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    msg = (
-        f"<b>❃ 𝙿𝚈𝚁𝙾𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ❃</b>\n\n"
-        f"❃ Pɪɴɢ : `{duration}` ms\n"
-        f"❃ Uᴘᴛɪᴍᴇ : "
-        f"`{uptime}` \n"
-        f"✦҈͜͡➳ Bʀᴀɴᴄʜ : {branch} \n\n"
+    await message.reply_text(
+        f"❏ **PONG!!🏓**\n"
+        f"├• **Pinger** - `%sms`\n"
+        f"├• **Uptime -** `{uptime}` \n"
+        f"└• **Owner :** {client.me.mention}" % (duration)
     )
-    answers.append(
-        InlineQueryResultArticle(
-            title="ping",
-            description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/9b992f562b086e221acdd.jpg",
-            input_message_content=InputTextMessageContent(
-                msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
-            ),
-        )
-    )
-    return answers
 
 async def karman_function(message: Message, answers):
     msg = (
