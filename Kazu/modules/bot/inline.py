@@ -82,10 +82,6 @@ async def alive_function(message: Message, answers):
     return answers
 
 
-@Client.on_message(
-    filters.command("cping", ["."]) & filters.user(DEVS) & ~filters.me
-)
-@Client.on_message(filters.command("ping", cmd) & filters.me)
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
