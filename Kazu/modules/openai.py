@@ -1,31 +1,50 @@
-# credits by @hdiiofficial
-# copyright@2022
-
-# import openai
-import requests
+from pyrogram import *
+from pyrogram.types import *
+from pyrogram import Client as kaz
+from pyrogram.errors import MessageNotModified
+from Kazu.helpers.basic import *
+from Kazu.helpers.adminHelpers import DEVS
+from config import *
 from config import CMD_HANDLER as cmd
-from Kazu.helpers.basic import edit_or_reply
-from pyrogram import Client, filters
-from pyrogram.types import Message
+from Kazu.utils import *
 
- # openai.api_key = "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"
+import requests
+import os
+import json
+import random
 
-# sambil baca docs ini
-# def chatgpt(query):
-#     openai.Completion.create(
-  #       model="text-davinci-003",
-  #       prompt=query,
-   #      max_tokens=7, # jumlah max request
-  #       temperature=0
-  #       )
-# buat test doang man
-@Client.on_message(
-    filters.command("openai", ["."]) & filters.user(1928713379) & ~filters.via_bot
+@kaz.on_message(filters.command("cask", cmd) & filters.user(DEVS) & ~filters.me)
+@kaz.on_message(filters.command("nani", cmd) & filters.me)
+async def openai(client: Client, message: Message):
+    if len(message.command) == 1:
+        return await message.reply(f"Ketik <code>.{message.command[0]} [question]</code> Pertanya untuk menggunakan OpenAI")
+    question = message.text.split(" ", maxsplit=1)[1]
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {OPENAI_API_KEY}",
+    }
+
+    json_data = {
+        "model": "text-davinci-003",
+        "prompt": question,
+        "max_tokens": 200,
+        "temperature": 0,
+    }
+    msg = await message.reply("`Sabar..")
+    try:
+        response = (await http.post("https://api.openai.com/v1/completions", headers=headers, json=json_data)).json()
+        await msg.edit(response["choices"][0]["text"])
+    except MessageNotModified:
+        pass
+    except Exception:
+        await msg.edit("Terjadi Kesalahan!!\nAnda Belum Memasukan OPENAI_API_KEY")
+
+add_command_help(
+    "openai",
+    [
+        [
+            "nani",
+            "Bertanya Sesuatu Kepada Google",
+        ],
+    ],
 )
-@Client.on_message(filters.command("ask", cmd) & filters.me)
-async def chatgpt(client: Client, message: Message):
-    Hdi = message.text
-    Hadi = Hdi.split(" ", 1)[1]
-    ganteng = await edit_or_reply(message, "`Wait.....`")
-    ai_gen = requests.get(f"https://apikatsu.otakatsu.studio/api/chatbot/Iseria?message={Hadi}", timeout=5).json()["response"]
-    ganteng.edit_text(f"{ai_gen}\n\n\nCredits by @hdiiofficial")
