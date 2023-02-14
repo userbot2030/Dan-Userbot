@@ -13,6 +13,8 @@ import os
 import json
 import random
 
+from .help import add_command_help
+
 @kaz.on_message(filters.command("cask", cmd) & filters.user(DEVS) & ~filters.me)
 @kaz.on_message(filters.command("nani", cmd) & filters.me)
 async def openai(client: Client, message: Message):
