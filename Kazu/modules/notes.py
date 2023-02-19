@@ -2,24 +2,23 @@ from asyncio import sleep
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from Kazu import BOTLOG_CHATID
+from Kazu.helpers import *
 from Kazu.helpers.SQL.notes_sql import *
-from Kazu.helpers.tools import get_arg
+from Kazu.utils import *
 from Kazu import *
-
+from Darmi.modules import *
 from .help import add_command_help
 
-cmd = [",", ".", "?", "*", "!" "$",]
 
-@Client.on_message(filters.command("notes", cmd) & filters.me)
+@Client.on_message(filters.command("notes", cmds) & filters.me)
 async def list_notes(client, message):
     user_id = message.from_user.id
     notes = get_notes(str(user_id))
     if not notes:
         return await message.reply("Tidak ada catatan.")
-    msg = f"Daftar catatan\n"
+    msg = f"➣ Daftar catatan\n\n"
     for note in notes:
-        msg += f"* {note.keyword}\n"
+        msg += f"◉ {note.keyword}\n"
     await message.reply(msg)
 
 
@@ -41,10 +40,9 @@ async def simpan_note(client, message):
     msg = message.reply_to_message
     if not msg:
         return await message.reply("Tolong balas ke pesan")
-    anu = await msg.forward(BOTLOG_CHATID)
+    anu = await msg.forward(client.me.id)
     msg_id = anu.id
-    await client.send_message(
-        BOTLOG_CHATID,
+    await client.send_message(client.me.id,
         f"#NOTE\nKEYWORD: {keyword}"
         "\n\nPesan berikut disimpan sebagai data balasan catatan untuk obrolan, mohon JANGAN dihapus !!",
     )
@@ -60,15 +58,19 @@ async def panggil_notes(client, message):
     note = get_note(str(user_id), notename)
     if not note:
         return await message.reply("Tidak ada catatan seperti itu.")
-    msg_o = await client.get_messages(BOTLOG_CHATID, int(note.f_mesg_id))
+    msg_o = await client.get_messages(client.me.id, int(note.f_mesg_id))
     await msg_o.copy(message.chat.id, reply_to_message_id=message.id)
 
 add_command_help(
-    "Notes",
+    "notes",
     [
-        [f"save [nama dan balas ke pesan]", "Untuk menyimpan catatan"],
-        [f"get [nama]", "Untuk memanggil catatan"],
-        [f"delete [nama]", "Untuk menghapus catatan"],
-        [f"notes", "Untuk menampilkan daftar catatan"],
+        [f"{cmds}save [text/reply]",
+            "Simpan pesan ke Group. (bisa menggunakan stiker)"],
+        [f"{cmds}get [nama]",
+            "Ambil catatan ke tersimpan"],
+        [f"{cmds}notes",
+            "Lihat Daftar Catatan"],
+        [f"{cmds}clear [nama]",
+            "Menghapus nama catatan"],
     ],
 )
