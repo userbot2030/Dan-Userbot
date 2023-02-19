@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from Kazu import BOTLOG_CHATID
-from Kazu.helpers.notes_sql import *
+from Kazu.helpers.SQL.notes_sql import *
 from Kazu.helpers.tools import get_arg
 from Kazu import *
 
