@@ -6,7 +6,6 @@ from Kazu.helpers import *
 from Kazu.helpers.SQL.notes_sql import *
 from Kazu.utils import *
 from Kazu import *
-from Kazu.modules import *
 from .help import add_command_help
 
 
