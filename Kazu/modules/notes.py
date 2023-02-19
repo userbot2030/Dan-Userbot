@@ -63,13 +63,13 @@ async def panggil_notes(client, message):
 add_command_help(
     "notes",
     [
-        [f"{cmd}save [text/reply]",
+        ["save [text/reply]",
             "Simpan pesan ke Group. (bisa menggunakan stiker)"],
-        [f"{cmd}get [nama]",
+        ["get [nama]",
             "Ambil catatan ke tersimpan"],
-        [f"{cmd}notes",
+        ["notes",
             "Lihat Daftar Catatan"],
-        [f"{cmd}clear [nama]",
+        ["clear [nama]",
             "Menghapus nama catatan"],
     ],
 )
