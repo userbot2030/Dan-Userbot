@@ -8,6 +8,7 @@ from Kazu.utils import *
 from Kazu import *
 from .help import add_command_help
 
+cmd = [",", ".", "?", "*", "!" "$",]
 
 @Client.on_message(filters.command("notes", cmd) & filters.me)
 async def list_notes(client, message):
