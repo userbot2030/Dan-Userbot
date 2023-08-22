@@ -1,15 +1,13 @@
-FROM debian:11
-ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get -y install \
-    python3 python3-dev python3-dev python3-pip python3-venv python3-psutil
+FROM kazu/pyrozu-userbot:buster
 
-RUN apt-get install git curl python3-pip ffmpeg -y
-ARG USER=root
-USER $USER
-RUN python3 -m venv venv
-WORKDIR /app
-COPY . .
-RUN pip3 install -r requirements.txt
-EXPOSE 5000
-RUN chmod +x /app/start.sh
-ENTRYPOINT ["./start.sh"]
+RUN git clone -b PyroZu-Userbot https://github.com/ionmusic/PyroZu-Userbot /home/pyrozuuserbot/ \
+    && chmod 777 /home/pyrozuuserbot \
+    && mkdir /home/pyrozuuserbot/bin/
+
+COPY ./sample_config.env ./config.env* /home/pyrozuuserbot/
+
+WORKDIR /home/pyrozuuserbot/
+
+RUN pip install -r requirements.txt
+
+CMD ["bash","start"]
