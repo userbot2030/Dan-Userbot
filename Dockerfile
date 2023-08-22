@@ -1,4 +1,4 @@
-FROM kazu/pyrozu-userbot:buster
+FROM worker/pyrozu-userbot:buster
 
 RUN git clone -b PyroZu-Userbot https://github.com/ionmusic/PyroZu-Userbot /home/pyrozuuserbot/ \
     && chmod 777 /home/pyrozuuserbot \
