@@ -38,7 +38,7 @@ async def main():
             ids.append(ex.id)
         except Exception as e:
             print(f"{e}")
-    if bot1 and not str(BOTLOG_CHATID).startswith("-100"):
+    if bot and not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot)
     await idle()
     await aiosession.close()
