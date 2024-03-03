@@ -55,7 +55,7 @@ async def gban_user(client: Client, message: Message):
         return await Kazu.edit("**Gak Bisa Di Gban Kontol karena dia Yang Buat Aku 🗿**")
     if user_id in WHITELIST:
         return await Kazu.edit(
-            "**Kau Gak Bisa Kontol Gban Dia Karena Dia Adalah admin @Karc0de 😡**"
+            "**Kau Gak Bisa Kontol Gban Dia Karena Dia Adalah admin @mhmdwldnnnn 😡**"
         )
     if user_id:
         try:
