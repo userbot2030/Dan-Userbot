@@ -70,7 +70,7 @@ async def alive_function(message: Message, answers):
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/9b992f562b086e221acdd.jpg",
+            thumb_url="https://telegra.ph//file/ee45fc78c3d140e7e5b40.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
@@ -88,15 +88,15 @@ async def pingme(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        f"❏ **PONG!!🏓**\n"
-        f"├• **Pinger** - `%sms`\n"
-        f"├• **Uptime -** `{uptime}` \n"
-        f"└• **Owner :** {client.me.mention}" % (duration)
+        f"❏ **ᴅᴀɴ-ᴜsᴇʀʙᴏᴛ!!🏓**\n"
+        f"├• **ᴘɪɴɢᴇʀ** - `%sms`\n"
+        f"├• **ᴜᴘᴛɪᴍᴇ -** `{uptime}` \n"
+        f"└• **ᴏᴡɴᴇʀ :** {client.me.mention}" % (duration)
     )
 
 async def karman_function(message: Message, answers):
     msg = (
-        f"𝙿𝚈𝚁𝙾𝚉𝚄-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 \n"
+        f"ᴅᴀɴ-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 \n"
         "ㅤㅤsᴛᴀᴛᴜs : ᴘʀᴇᴍɪᴜᴍ ᴀᴋᴛɪғ \n"
         f"ㅤㅤㅤㅤᴍᴏᴅᴜʟᴇs:</b> <code>{len(modules)} Modules</code> \n"
         f"ㅤㅤㅤㅤʙᴏᴛ ᴠᴇʀsɪᴏɴ: {BOT_VER} \n"
@@ -104,14 +104,14 @@ async def karman_function(message: Message, answers):
     )
     answers.append(
         InlineQueryResultArticle(
-            title="zu",
+            title="dan",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/9b992f562b086e221acdd.jpg",
+            thumb_url="https://telegra.ph//file/ee45fc78c3d140e7e5b40.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="✨sᴜᴘᴘᴏʀᴛ✨", url="t.me/kazusupportgrp"), InlineKeyboardButton(text="✨ᴏᴡɴᴇʀ✨", url="t.me/kenapatagkazu")], [InlineKeyboardButton(text="✨ᴍᴇɴᴜ✨", callback_data="reopen")]]
+                [[InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/Disney_storeDan"), InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/mhmdwldnnnn")], [InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data="reopen")]]
             ),
         )
     )
@@ -124,7 +124,7 @@ async def help_function(answers):
         InlineQueryResultArticle(
             title="Help Article!",
             description="Check Command List & Help",
-            thumb_url="https://telegra.ph/file/9b992f562b086e221acdd.jpg",
+            thumb_url="https://telegra.ph//file/ee45fc78c3d140e7e5b40.jpg",
             input_message_content=InputTextMessageContent(
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
