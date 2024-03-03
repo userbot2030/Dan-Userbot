@@ -96,7 +96,7 @@ async def pingme(client: Client, message: Message):
 
 async def karman_function(message: Message, answers):
     msg = (
-        f"ᴅᴀɴ-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 \n"
+        f"𝙳𝙰𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ⚡\n"
         "ㅤㅤsᴛᴀᴛᴜs : ᴘʀᴇᴍɪᴜᴍ ᴀᴋᴛɪғ \n"
         f"ㅤㅤㅤㅤᴍᴏᴅᴜʟᴇs:</b> <code>{len(modules)} Modules</code> \n"
         f"ㅤㅤㅤㅤʙᴏᴛ ᴠᴇʀsɪᴏɴ: {BOT_VER} \n"
