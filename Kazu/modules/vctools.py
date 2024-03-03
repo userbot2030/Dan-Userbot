@@ -110,7 +110,7 @@ async def joinvc(client: Client, message: Message):
         await client.group_call.start(chat_id)
     except Exception as e:
         return await Kazu.edit(f"**ERROR:** `{e}`")
-    await Kazu.edit(f"❏ **Berhasil Join Ke Obrolan Suara**\n└ **Chat ID:** `{chat_id}`")
+    await Kazu.edit(f"❏ **Berhasil Join Ke Gc Jelek Lu**\n└ **Chat ID:** `{chat_id}`")
     await sleep(5)
     await client.group_call.set_is_mute(True)
 
@@ -131,7 +131,7 @@ async def leavevc(client: Client, message: Message):
         await client.group_call.stop()
     except Exception as e:
         return await edit_or_reply(message, f"**ERROR:** `{e}`")
-    msg = "❏ **Berhasil Turun dari Obrolan Suara**"
+    msg = "❏ **Berhasil Turun dari Gc Jelek Lu**"
     if chat_id:
         msg += f"\n└ **Chat ID:** `{chat_id}`"
     await Kazu.edit(msg)
