@@ -174,7 +174,7 @@ async def gmute_user(client: Client, message: Message):
         return await Kazu.edit("**Gak Bisa Di Gmute Kontol karena dia Yang Buat Aku 🗿**")
     if user.id in WHITELIST:
         return await Kazu.edit(
-            "**Kau Gak Bisa Kontol Gmute Dia Karena Dia Adalah admin @Karc0de 😡**"
+            "**Kau Gak Bisa Kontol Gmute Dia Karena Dia Adalah admin @mhmdwldnnnn 😡**"
         )
     try:
         replied_user = reply.from_user
