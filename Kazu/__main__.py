@@ -11,7 +11,7 @@ from Kazu.helpers.misc import heroku, create_botlog
 BOT_VER = "2.0.0"
 CMD_HANDLER = ["." "," "?" "!"]
 MSG_ON = """
-💢 **ᴅᴀɴ-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙰𝙺𝚃𝙸𝙵** 💢
+💢 **𝙳𝙰𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙰𝙺𝚃𝙸𝙵** 💢
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 ❍▹ **Usᴇʀʙᴏᴛ Vᴇʀsɪᴏɴ -** `{}`
 ❍▹ **Kᴇᴛɪᴋ** `{}alive` **Uɴᴛᴜᴋ Mᴇɴɢᴇᴄᴇᴋ Bᴏᴛ**
