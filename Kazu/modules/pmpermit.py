@@ -23,7 +23,7 @@ from .help import add_command_help
 
 DEF_UNAPPROVED_MSG = (
     "┏▼━━━━━━━━━━━━━━━━━━━▼┓\n"
-    "         ✨ 𝙹𝙰𝙽𝙶𝙰𝙽 𝚂𝙿𝙰𝙼 𝚈𝙰 𝙳𝙴𝙺 ✨\n"
+    " ✨ 𝙹𝙰𝙽𝙶𝙰𝙽 𝚂𝙿𝙰𝙼 𝚈𝙰 𝙳𝙴𝙺 ✨\n"
     "┗▲━━━━━━━━━━━━━━━━━━━▲┛\n"
     "• Saya belum menyetujui anda untuk PM.\n"
     "• Tunggu sampai saya menyetujui PM anda.\n"
