@@ -5,13 +5,13 @@ from pyrogram import Client
 
 
 def restart():
-    os.execvp(sys.executable, [sys.executable, "-m", "Kazu"])
+    os.execvp(sys.executable, [sys.executable, "-m", "Dan"])
 
 async def join(client):
     try:
-        await client.join_chat("kazusupportgrp")
-        await client.join_chat("Html12text")
-        await client.join_chat("StoryMan01")
-        await client.join_chat("kynansupport")
+        await client.join_chat("musik_supportdan")
+        await client.join_chat("logsmusicbot")
+        await client.join_chat("Disney_storeDan")
+        await client.join_chat("Userlogsbott")
     except BaseException:
         pass
