@@ -84,7 +84,7 @@ def inline_wrapper(func):
                 results=[
                     (
                         InlineQueryResultArticle(
-                            title="Maaf, Kamu Harus Menjadi Pengguna Sudo Untuk Memakai Saya!",
+                            title="order ubot prem @Disney_storeDan",
                             input_message_content=InputTextMessageContent(
                                 "Atau Kamu Bisa Membuatnya Sendiri Di @Disney_storeDan"
                             ),
